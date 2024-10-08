@@ -62,7 +62,7 @@ def analisando_imc(a):
             lista_analise_imc.append("Sobrepeso")
         elif cliente >=18.5:
             lista_analise_imc.append("Peso normal")
-        elif cliente <= 18.5:
+        else:
             lista_analise_imc.append("Abaixo do peso")
 
     return lista_analise_imc
@@ -76,7 +76,7 @@ logoSenai()
 print("="*40)
 print(f"{"Resultado":^40}")
 print("="*40)
-for i, cliente in enumerate(nome):
+for i in range(len(nomes)):
     print(f"Nome: {nomes[i]}")
     print(f"Sobrenome: {sobrenomes[i]}")
     print(f"Idade: {idades[i]}")
